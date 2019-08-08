@@ -1,0 +1,22 @@
+.container {
+    position: relative;
+    width: 50%;
+    left: 25%;
+    top: 200px;
+}
+
+.selink:hover {
+    color: #999;
+}
+
+.selink {
+    font-size: 21px;
+    /* text-decoration: none; */
+    color: #555;
+}
+
+.con-title {
+    font-size: 23px;
+    margin-bottom: 10px;
+    color: #555;
+}

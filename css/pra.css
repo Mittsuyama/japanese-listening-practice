@@ -1,0 +1,45 @@
+.main-container {
+    position: relative;
+    top: 200px;
+    left: 25%;
+    width: 50%;
+}
+
+.blank-box {
+    margin: 0px 10px;
+}
+
+.blank {
+    font-size: 22px;
+    text-align: center;
+    outline-style: none;
+    border: 0px;
+    background: transparent;
+}
+
+.blank-box, .not-blank {
+    line-height: 40px;
+}
+
+.blank-box {
+    position: relative;
+    padding: 3px 0px;
+    border-bottom: 1px solid black;
+}
+
+.not-blank {
+    font-size: 23px;
+    color: #555;
+}
+
+.finish-box {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.info {
+    margin-top: 40px;
+    font-size: 16px;
+    color: #888;
+}
