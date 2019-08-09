@@ -12,7 +12,7 @@
     </head>
     <body>
         <?php
-            const RATE = "0.2";
+            const RATE = "0.1";
             include "php/res_to_html.php";
             $path = "res";
             $file_dir = opendir($path);
@@ -35,6 +35,7 @@
                 }
                 echo '</ul>';
             ?>
+            <div class = "info">测试中...<br>可以联系我 mitsuyama@163.com，一起处理听力文本数据提升听力能力</div>
         </div>
     </bdoy>
 </html>

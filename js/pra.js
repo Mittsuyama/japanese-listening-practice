@@ -40,7 +40,7 @@ $(function() {
     var inputs = $(".blank");
     
     $(".blank").each(function() {
-        var len = $(this).attr("cor").length;
+        var len = $(this).attr("title").length;
         len *= 35;
         $(this).css("width", len + "px");
     });
@@ -48,7 +48,6 @@ $(function() {
 
     $(document).keyup(function(e) {
         key_code = e.keyCode;
-        console.log(key_code);
         if(key_code == 48) {
             audioPlayAgain();
         }
@@ -57,17 +56,9 @@ $(function() {
     $(".blank").keydown(function(e) {
         key_code = e.keyCode;
         var userInput = $(this).val();
-        var corInput = $(this).attr("cor");
+        var corInput = $(this).attr("title");
         var idx = inputs.index(this);
-        if(key_code == 48) {
-            if(e.preventDefault) {
-                e.preventDefault();
-            }
-            else {
-                e.returnValue = false;
-            }
-            return;
-        }
+        console.log(key_code);
         if(key_code == 13 && strAllJudge(corInput, userInput) && idx == inputs.length - 1) {
             var q_id = parseInt(getQueryVariable("id"));
             var q_page = parseInt(getQueryVariable("page"));
@@ -85,7 +76,7 @@ $(function() {
         }
     }).on('input propertychange', function() {
         var userInput = $(this).val();
-        var corInput = $(this).attr("cor");
+        var corInput = $(this).attr("title");
         if(userInput) {
             if(!strHeadJudge(corInput, userInput)) {
                 $(this).css("color", "#f22613");

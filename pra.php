@@ -30,14 +30,14 @@
         <div class = "main-container">
             <?php
                 if($q_page >= count($cons)) {
-                    echo "YOU FINISH IT.<br>";
-                    echo '<a href = "index.php">go to content list</a>';
+                    echo "已经全部完成，";
+                    echo '<a href = "index.php">点击回到目录</a>';
                 }
                 else {
                     echo '<div class = "finish-box">完成: ' . $q_page . ' / ' . count($cons) . '：</div>';
                     echo '<audio src = "' . getMusicDir($path, $dirs[$q_id], $q_page) . '" id = "bgaudio" hidden = "true"></audio>';
                     resToHtml($cons[$q_page], RATE);
-                    echo '<div class = "info">下一个空：正确后空格 | 下一句：全部正确后回车 | 再放一遍听力：数字 0</div>';
+                    echo '<div class = "info">下一个空：正确后空格　|　下一句：全部正确后回车　|　再放一遍听力：数字 0　|　获取提示：鼠标悬停</div>';
                 }
             ?>
         </div>

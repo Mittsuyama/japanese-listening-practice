@@ -10,13 +10,19 @@
 }
 
 .selink {
-    font-size: 21px;
+    font-size: 19px;
     /* text-decoration: none; */
     color: #555;
 }
 
 .con-title {
-    font-size: 23px;
+    font-size: 21px;
     margin-bottom: 10px;
     color: #555;
+}
+
+.info {
+    margin-top: 50px;
+    font-size: 15px;
+    color:#777;
 }
